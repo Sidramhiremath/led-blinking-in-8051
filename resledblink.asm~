@@ -1,0 +1,11 @@
+org 0000h
+clr p2.0
+lcall delay
+setb p2.0
+
+delay:
+mov r0,#00000111b
+here:
+djnz r0,here
+ret
+
